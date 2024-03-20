@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "overdosermod:item/pr80"
+    "layer0": "overdoser:item/pr80"
   }
 }

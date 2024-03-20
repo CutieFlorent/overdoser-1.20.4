@@ -2,9 +2,10 @@ package overdose.dxm;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class OverdoserModClient implements ClientModInitializer {
+public class OverdoserClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+
 
     }
 }

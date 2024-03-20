@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "overdosermod:item/night"
+    "layer0": "overdoser:item/sns"
   }
 }

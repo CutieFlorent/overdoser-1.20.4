@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "overdoser-mod",
+	"id": "overdoser",
 	"version": "${version}",
 	"name": "Overdoser Mod",
 	"description": "This is a mod for overdosers! There are several drugs players can use in the game after loading this mod.",
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/overdoser-mod/icon.png",
+	"icon": "assets/overdoser/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"overdose.dxm.OverdoserMod"
+			"overdose.dxm.Overdoser"
 		],
 		"client": [
-			"overdose.dxm.OverdoserModClient"
+			"overdose.dxm.OverdoserClient"
 		],
 		"fabric-datagen": [
-			"overdose.dxm.OverdoserModDataGenerator"
+			"overdose.dxm.OverdoserDataGenerator"
 		]
 	},
 	"mixins": [
-		"overdoser-mod.mixins.json"
+		"overdoser.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
