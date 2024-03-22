@@ -18,6 +18,11 @@ public class ModItemGroups {
                         entries.add(ModItems.PR80);
                         entries.add(ModItems.NIGHT);
                         entries.add(ModItems.SNS);
+                        entries.add(ModItems.ClNO2);
+                        entries.add(ModItems.BRON);
+
+                        entries.add(ModItems.WEED);
+
                         entries.add(ModItems.OIL_BUCKET);
 
                     }).build());

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "overdoser:weed"
+    },
+    "U": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "pattern": [
+    "###",
+    "#U#",
+    "###"
+  ],
+  "result": {
+    "item": "overdoser:oil_bucket",
+    "count": 1
+  }
+}
