@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import overdose.dxm.item.ModItemGroups;
 import overdose.dxm.item.ModItems;
+import overdose.dxm.item.ModLootTables;
 
 public class Overdoser implements ModInitializer {
 	public static final String MOD_ID = "overdoser";
@@ -21,6 +22,7 @@ public class Overdoser implements ModInitializer {
 		LOGGER.info("Hello Overdosers!");
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
+		ModLootTables.modifyLootTables();
 
 		FluidRenderHandlerRegistry.INSTANCE.register(ModItems.STILL_OIL, ModItems.FLOWING_OIL, new SimpleFluidRenderHandler(
 				new Identifier("minecraft:block/water_still"),
