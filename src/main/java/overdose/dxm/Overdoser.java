@@ -9,6 +9,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import overdose.dxm.block.ModBlocks;
 import overdose.dxm.item.ModItemGroups;
 import overdose.dxm.item.ModItems;
 import overdose.dxm.item.ModLootTables;
@@ -23,6 +24,7 @@ public class Overdoser implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModLootTables.modifyLootTables();
+		ModBlocks.registerModBlocks();
 
 		FluidRenderHandlerRegistry.INSTANCE.register(ModItems.STILL_OIL, ModItems.FLOWING_OIL, new SimpleFluidRenderHandler(
 				new Identifier("minecraft:block/water_still"),

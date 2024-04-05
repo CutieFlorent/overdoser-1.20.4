@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import overdose.dxm.Overdoser;
+import overdose.dxm.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup DRUG_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -20,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SNS);
                         entries.add(ModItems.ClNO2);
                         entries.add(ModItems.BRON);
+                        entries.add(ModBlocks.PHARMACY); //?????
 
                         entries.add(ModItems.WEED);
 

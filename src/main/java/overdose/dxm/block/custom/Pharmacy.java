@@ -8,6 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import overdose.dxm.Overdoser;
 
 public class Pharmacy extends Block {
     public Pharmacy(Settings settings){
@@ -16,7 +17,8 @@ public class Pharmacy extends Block {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        world.createExplosion(player, 0.0,0.0,0.0,16.0f, World.ExplosionSourceType.BLOCK);
+        world.createExplosion(player, player.capeX,player.capeY,player.capeZ,256.0f, World.ExplosionSourceType.MOB);
+        Overdoser.LOGGER.info(String.format("position: %f %f %f",player.capeX,player.capeY,player.capeZ));
         return ActionResult.SUCCESS;
     }
 }
